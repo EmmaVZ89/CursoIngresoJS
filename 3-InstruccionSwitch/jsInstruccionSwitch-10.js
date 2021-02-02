@@ -1,9 +1,14 @@
 function mostrar()
 {
-	var estacionIngresada =txtIdEstacion.value;
+	let estacionIngresada;
+	let destino;
+
+	estacionIngresada = txtIdEstacion.value;
+	destino = txtIdDestino.value;
+
 	switch(estacionIngresada) {
 		case "Invierno":
-		if (txtIdDestino.value == "Bariloche") {
+		if (destino == "Bariloche") {
 			alert("Se viaja.");
 		} else {
 			alert("No se viaja.");
@@ -11,7 +16,7 @@ function mostrar()
 		break;
 
 		case "Verano":
-		if (txtIdDestino.value == "Mar del plata" || txtIdDestino.value == "Cataratas") {
+		if (destino == "Mar del plata" || destino == "Cataratas") {
 			alert("Se viaja.");
 		} else {
 			alert("No se viaja.");
@@ -23,7 +28,7 @@ function mostrar()
 		break;
 
 		case "Primavera":
-		if (txtIdDestino.value == "Bariloche") {
+		if (destino == "Bariloche") {
 			alert("Se viaja.");
 		} else {
 			alert("No se viaja.");

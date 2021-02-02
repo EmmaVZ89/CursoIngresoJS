@@ -1,7 +1,13 @@
 function mostrar()
 {
-	//tomo la edad  
-	if(txtIdEdad.value < 13 || txtIdEdad.value > 17) {
+	//tomo la edad 
+	let edad;
+
+	edad = txtIdEdad.value;
+	edad = parseInt(txtIdEdad.value);
+
+	if(edad < 13 || edad > 17) {
 		alert("La persona NO es adolescente.")
 	}
+	
 }//FIN DE LA FUNCIÓN

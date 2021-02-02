@@ -4,9 +4,18 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	let num1 = parseInt(txtIdNumeroUno.value);
-	let num2 = parseInt(txtIdNumeroDos.value);
-	let resultado = num1 + num2;
+	let numero1;
+	let numero2;
+	let resultado;
+
+	numero1 = txtIdNumeroUno.value;
+	numero2 = txtIdNumeroDos.value;
+
+	numero1 = parseInt(txtIdNumeroUno.value);
+	numero2 = parseInt(txtIdNumeroDos.value);
+	
+	resultado = numero1 + numero2;
+
 	alert("El resultado de la suma es: " + resultado); 
 }
 

@@ -1,12 +1,15 @@
 function mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
-	let numRandom = Math.ceil(Math.random()*10);
-	if (numRandom == 9 || numRandom == 10) {
-		alert("EXCELENTE");
-	} else if(numRandom >= 4 && numRandom < 9) {
-		alert("APROBÓ");
+	let numeroRandom;
+
+	numeroRandom = Math.ceil(Math.random()*10);
+
+	if (numeroRandom == 9 || numeroRandom == 10) {
+		alert(numeroRandom + ": EXCELENTE");
+	} else if(numeroRandom >= 4 && numeroRandom < 9) {
+		alert(numeroRandom + ": APROBÓ");
 	} else {
-		alert("Vamos, la proxima se puede");
+		alert(numeroRandom + ": Vamos, la proxima se puede");
 	}
 }//FIN DE LA FUNCIÓN

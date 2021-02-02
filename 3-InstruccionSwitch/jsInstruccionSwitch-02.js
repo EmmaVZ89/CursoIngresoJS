@@ -1,7 +1,10 @@
 function mostrar()
 {
 	//tomo el mes
-	var mesDelAño =txtIdMes.value;
+	var mesDelAño;
+
+	mesDelAño = txtIdMes.value;
+	
 	switch(mesDelAño) {
 		case "Enero":
 		case "Febrero":

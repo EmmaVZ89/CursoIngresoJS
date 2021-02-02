@@ -1,7 +1,9 @@
 function mostrar()
 {
 	//tomo la hora
-	var horaDelDia =txtIdHora.value;
+	var horaDelDia;
+
+	horaDelDia = txtIdHora.value;
 	
 	switch(parseInt(horaDelDia)) {
 		case 7:

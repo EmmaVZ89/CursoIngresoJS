@@ -1,42 +1,58 @@
 function mostrar()
 {
-	var estacionIngresada =txtIdEstacion.value;
-	let base = 15000;
+	let estacionIngresada;
+	let destino;
+	let base;
+	let aumento;
+	let descuento;
+	let total;
+
+	estacionIngresada = txtIdEstacion.value;
+	destino = txtIdDestino.value;
+	base = 15000;
+
 	switch(estacionIngresada) {
 		case "Invierno":
-		if (txtIdDestino.value == "Bariloche") {
-			let precio = base*1.2;
-			alert(txtIdDestino.value+" tiene un costo de $"+precio);
-		} else if (txtIdDestino.value == "Cordoba" || txtIdDestino.value == "Cataratas") {
-			let precio = base*0.9;
-			alert(txtIdDestino.value+" tiene un costo de $"+precio);
+		if (destino == "Bariloche") {
+			aumento = base * 0.2;
+			total = base + aumento;
+			alert(destino + " tiene un costo de $" + total);
+		} else if (destino == "Cordoba" || destino == "Cataratas") {
+			descuento = base * 0.1;
+			total = base - descuento;
+			alert(destino + " tiene un costo de $" + total);
 		} else {
-			let precio = base * 0.8;
-			alert(txtIdDestino.value+" tiene un costo de $"+precio);
+			descuento = base * 0.2;
+			total = base - descuento;
+			alert(destino + " tiene un costo de $" + total);
 		}
 		break;
 
 		case "Verano":
-		if (txtIdDestino.value == "Bariloche") {
-			let precio = base*0.8;
-			alert(txtIdDestino.value+" tiene un costo de $"+precio);
-		} else if(txtIdDestino.value == "Cordoba" || txtIdDestino.value == "Cataratas") {
-			let precio = base*1.1;
-			alert(txtIdDestino.value+" tiene un costo de $"+precio);
+		if (destino == "Bariloche") {
+			descuento = base * 0.2;
+			total = base - descuento;
+			alert(destino + " tiene un costo de $" + total);
+		} else if(destino == "Cordoba" || destino == "Cataratas") {
+			aumento = base * 0.1;
+			total = base + aumento;
+			alert(destino + " tiene un costo de $" + total);
 		} else {
-			let precio = base * 1.2;
-			alert(txtIdDestino.value+" tiene un costo de $"+precio);
+			aumento = base * 0.2;
+			total = base + aumento;
+			alert(destino + " tiene un costo de $" + total);
 		}
 		break;
 
 		case "Otoño":
 		case "Primavera":
-		if (txtIdDestino.value == "Bariloche" || txtIdDestino.value == "Mar del plata" || txtIdDestino.value == "Cataratas") {
-			let precio = base *1.1;
-			alert(txtIdDestino.value+" tiene un costo de $"+precio);
+		if (destino == "Bariloche" || destino == "Mar del plata" || destino == "Cataratas") {
+			aumento = base * 0.1;
+			total = base + aumento;
+			alert(destino + " tiene un costo de $" + total);
 		} else {
-			let precio = base;
-			alert(txtIdDestino.value+" tiene un costo de $"+precio);
+			total = base;
+			alert(destino + " tiene un costo de $" + total);
 		}
 		break;
 	}

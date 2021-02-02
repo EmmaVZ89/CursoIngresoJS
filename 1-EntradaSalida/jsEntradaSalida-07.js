@@ -6,33 +6,65 @@ ej.: "la Resta es 750"*/
 
 function sumar()
 {	
-	let num1 = parseInt(txtIdNumeroUno.value);
-	let num2 = parseInt(txtIdNumeroDos.value);
-	let resultado = num1+num2;
-	alert("La suma es: "+resultado);
+	let numero1;
+	let numero2;
+	let resultado;
+
+	numero1 = txtIdNumeroUno.value;
+	numero2 = txtIdNumeroDos.value;
+
+	numero1 = parseInt(txtIdNumeroUno.value);
+	numero2 = parseInt(txtIdNumeroDos.value);
+	resultado = numero1 + numero2;
+
+	alert("La suma es: " + resultado);
 }
 
 function restar()
 {
-	let num1 = parseInt(txtIdNumeroUno.value);
-	let num2 = parseInt(txtIdNumeroDos.value);
-	let resultado = num1-num2;
-	alert("La resta es: "+resultado);
+	let numero1;
+	let numero2;
+	let resultado;
+
+	numero1 = txtIdNumeroUno.value;
+	numero2 = txtIdNumeroDos.value;
+
+	numero1 = parseInt(txtIdNumeroUno.value);
+	numero2 = parseInt(txtIdNumeroDos.value);
+	resultado = numero1 - numero2;
+
+	alert("La resta es: " + resultado);
 }
 
 function multiplicar()
 { 
-	let num1 = parseInt(txtIdNumeroUno.value);
-	let num2 = parseInt(txtIdNumeroDos.value);
-	let resultado = num1*num2;
-	alert("El producto es: "+resultado);
+	let numero1;
+	let numero2;
+	let resultado;
+
+	numero1 = txtIdNumeroUno.value;
+	numero2 = txtIdNumeroDos.value;
+
+	numero1 = parseInt(txtIdNumeroUno.value);
+	numero2 = parseInt(txtIdNumeroDos.value);
+	resultado = numero1 * numero2;
+
+	alert("El producto es: " + resultado);
 }
 
 function dividir()
 {
-	let num1 = parseInt(txtIdNumeroUno.value);
-	let num2 = parseInt(txtIdNumeroDos.value);
-	let resultado = num1/num2;
-	alert("La division es: "+resultado);
+	let numero1;
+	let numero2;
+	let resultado;
+
+	numero1 = txtIdNumeroUno.value;
+	numero2 = txtIdNumeroDos.value;
+
+	numero1 = parseInt(txtIdNumeroUno.value);
+	numero2 = parseInt(txtIdNumeroDos.value);
+	resultado = numero1 / numero2;
+
+	alert("La division es: " + resultado);
 }
 

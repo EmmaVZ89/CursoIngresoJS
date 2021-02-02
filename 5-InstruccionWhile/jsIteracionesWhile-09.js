@@ -7,18 +7,26 @@ function mostrar()
 	let numeroMaximo;
 	let numeroMinimo;
 	let respuesta;
-	let contador = 0;
-	let arrayNumeros = [];
+	let contador;
+	let arrayNumeros;
+
+	contador = 0;
+	arrayNumeros = [];
 	respuesta='si';
+
 	while(respuesta=="si")
 	{
-		numeroIngresado = parseInt(prompt("Ingrese un numero:"));
+		numeroIngresado = prompt("Ingrese un numero:");
+		numeroIngresado = parseInt(numeroIngresado);
 		arrayNumeros[contador] = numeroIngresado;
 		contador++;
-		respuesta=prompt("desea continuar?");
+		respuesta = prompt("desea continuar?");
 	}
+	
 	numeroMaximo = Math.max(...arrayNumeros);
 	numeroMinimo = Math.min(...arrayNumeros);
-	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimo.value=numeroMinimo;
+
+	txtIdMaximo.value = numeroMaximo;
+	txtIdMinimo.value = numeroMinimo;
+
 }//FIN DE LA FUNCIÓN
