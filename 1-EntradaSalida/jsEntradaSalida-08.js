@@ -12,8 +12,8 @@ function SacarResto()
 	dividor = txtIdNumeroDivisor.value;
 
 
-	dividendo = parseInt(txtIdNumeroDividendo.value);
-	dividor = parseInt(txtIdNumeroDivisor.value);
+	dividendo = parseInt(dividendo);
+	dividor = parseInt(dividor);
 	resto = dividendo % dividor;
 	
 	alert("El resto es: " + resto);

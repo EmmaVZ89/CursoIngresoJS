@@ -5,7 +5,7 @@ function mostrar()
 	let estado;
 
 	edad = txtIdEdad.value;
-	edad = parseInt(txtIdEdad.value);
+	edad = parseInt(edad);
 	estado = estadoCivil.value;
 
 	if (edad >= 18 && estado == "Soltero") {

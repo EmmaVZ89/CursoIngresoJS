@@ -4,8 +4,9 @@ function mostrar()
 	var horaDelDia;
 
 	horaDelDia = txtIdHora.value;
+	horaDelDia = parseInt(horaDelDia);
 	
-	switch(parseInt(horaDelDia)) {
+	switch(horaDelDia) {
 		case 0:
 		case 1:
 		case 2:

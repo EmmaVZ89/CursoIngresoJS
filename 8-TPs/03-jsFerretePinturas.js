@@ -4,10 +4,30 @@ B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en
 */
 function FahrenheitCentigrados () 
 {
-	
+	let fahrenheit;
+	let centigrados;
+
+	fahrenheit = txtIdTemperatura.value;
+	fahrenheit = parseInt(fahrenheit);
+
+	centigrados = (5/9) * (fahrenheit - 32);
+	centigrados = centigrados.toFixed(2);
+
+	alert(fahrenheit + " Fahrenheit son " + centigrados + " centigrados.");
 }
 
 function CentigradosFahrenheit () 
 {
-	
+	let centigrados;
+	let fahrenheit;
+
+	centigrados = txtIdTemperatura.value;
+	centigrados = parseInt(centigrados);
+
+	fahrenheit = 9/5 * centigrados + 32;
+	fahrenheit = fahrenheit.toFixed(2);
+
+	alert(centigrados + " centigrados son " + fahrenheit + " fahrenheit.");
 }
+
+// Zelarayan Emmanuel Victor

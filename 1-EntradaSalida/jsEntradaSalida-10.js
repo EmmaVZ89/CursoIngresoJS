@@ -6,11 +6,11 @@ en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
 	let importe;
-	let resultado;
 	let descuento;
+	let resultado;
 
 	importe = txtIdImporte.value;
-	importe = parseInt(txtIdImporte.value);
+	importe = parseInt(importe);
 	
 	descuento =  importe * 0.25;
 	resultado = importe - descuento;
