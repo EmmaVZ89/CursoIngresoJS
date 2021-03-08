@@ -6,14 +6,14 @@ function mostrar()
 	let sexoIngresado;
 	let sexo;
 
-	while(sexoIngresado != "f" && sexoIngresado != "m") {
-		sexoIngresado = prompt("Ingrese su sexo: \n f : femenino \n m : masculino");
-		if (sexoIngresado == "f") {
-			sexo = "Femenino";
-		} else if (sexoIngresado == "m") {
-			sexo = "Masculino";
-		}
+	sexoIngresado = prompt("Ingrese su sexo: \n f : femenino \n m : masculino");
+	sexoIngresado = sexoIngresado.toLowerCase();
+
+	while(sexoIngresado != "f" && sexoIngresado != "m")
+	{
+		sexoIngresado = prompt("Error! Ingrese su sexo: \n f : femenino \n m : masculino");
 	}
-	txtIdSexo.value = sexo;
+	
+	txtIdSexo.value = sexoIngresado;
 
 }//FIN DE LA FUNCIÓN

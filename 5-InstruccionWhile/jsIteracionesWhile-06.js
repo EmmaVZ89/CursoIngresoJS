@@ -8,12 +8,14 @@ function mostrar()
 	contador = 0;
 	suma = 0;
 
-	while(contador < 5) {
+	do
+	{
 		numeroIngresado = prompt("Ingrese un numero:");
 		numeroIngresado = parseInt(numeroIngresado);
+		
 		suma += numeroIngresado;
 		contador++;
-	}
+	}while(contador < 5);
 	
 	promedio = suma / contador;
 

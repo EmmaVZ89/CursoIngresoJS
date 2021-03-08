@@ -6,10 +6,16 @@ function mostrar()
 	edad = txtIdEdad.value;
 	edad = parseInt(edad);
 	
-	if(txtIdEdad.value >= 18) {
+	if(edad > 17) {
+
 		alert("La persona es mayor de edad");
+
 	} else {
+
 		alert("La persona es menor de edad");
+
 	}
 
 }//FIN DE LA FUNCIÓN
+
+// Zelarayan Emmanuel Victor

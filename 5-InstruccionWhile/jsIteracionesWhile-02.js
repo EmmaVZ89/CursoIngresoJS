@@ -7,8 +7,11 @@ function mostrar()
 
 	contador = 10;
 	 
-	while(contador >= 1) {
-		alert(contador);
+	while(contador > 0)
+	{
+		console.log(contador);
 		contador--;
 	}
 }//FIN DE LA FUNCIÓN
+
+//Zelarayan Emmanuel Victor

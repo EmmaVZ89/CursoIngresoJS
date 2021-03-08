@@ -1,27 +1,25 @@
 function mostrar()
 {
 
-	var miArray = new Array();
-	var acum=0;
-	for (var i = 0; i <5; i++)
-	{
-		miArray[i]=parseInt(prompt("Ingrese un numero"));
-		acum+=miArray[i];
+let arrayNumeros;
+let suma;
 
-	}
+arrayNumeros = [];
+suma = 0;
 
+for(let i = 0; i < 5; i++) {
+	arrayNumeros[i] = prompt("Ingrese un número:");
+	arrayNumeros[i] = parseInt(arrayNumeros[i]);
+	suma += arrayNumeros[i];
+}
 
+document.write("Los números en el array son: <br>");
 
-	for(var i=0; i<5; i++)
-	{
+for(let j = 0; j < 5; j++) {
+	document.write("En la posición " + j + " esta el número " + arrayNumeros[j] + "<br>");
+}
 
-		document.write("Posicion "+i+"-->"+miArray[i]+"<br>");
-
-
-	}
-
-	document.write("<h1> La suma de todos los numeros es: "+acum+"</h1>")
-
+document.write("La suma todos los números del array es: " + suma);
 
 
 

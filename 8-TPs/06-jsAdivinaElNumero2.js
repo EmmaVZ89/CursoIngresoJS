@@ -11,18 +11,71 @@ Más de 10 intentos: “afortunado en el amor!!”.*/
 
 var numeroSecreto; 
 var contadorIntentos;
+var numeroIngresado;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
-	 
+	alert("Comienza el juego!!. Elige un número entre 1 y 100.")
+	contadorIntentos = 0;
+	numeroSecreto = Math.floor(Math.random() * 100) + 1;
 	
-
 }
 
 function verificar()
 {
-	
-	
 
+	numeroIngresado = txtIdNumero.value;
+	numeroIngresado = parseInt(numeroIngresado);
+	
+	contadorIntentos++;
+	txtIdIntentos.value = contadorIntentos;
+
+	if(numeroSecreto == numeroIngresado)
+	{
+		switch(contadorIntentos)
+		{
+			case 1:
+			alert("Felicitaciones!! usted gano en " + contadorIntentos + " intentos, " + "Usted es un Psíquico");
+			break;
+
+			case 2:
+			alert("Felicitaciones!! usted gano en " + contadorIntentos + " intentos, " + "Excelente percepción");
+			break;
+
+			case 3:
+			alert("Felicitaciones!! usted gano en " + contadorIntentos + " intentos, " + "Esto es suerte");
+			break;
+
+			case 4:
+			alert("Felicitaciones!! usted gano en " + contadorIntentos + " intentos, " + "Excelente técnica");
+			break;
+
+			case 5:
+			alert("Felicitaciones!! usted gano en " + contadorIntentos + " intentos, " + "Usted está en la media");
+			break;
+
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
+			alert("Felicitaciones!! usted gano en " + contadorIntentos + " intentos, " + "Falta técnica");
+			break;
+
+			default:
+			alert("Felicitaciones!! usted gano en " + contadorIntentos + " intentos, " + "Afortunado en el amor!!");
+			break;
+		}
+	}
+	else
+	{
+		if(numeroSecreto > numeroIngresado)
+		{
+			alert("Ingresa un numero mas grande");
+		}
+		else
+		{
+			alert("Ingresa un numero mas pequeño");
+		}
+	}
 }

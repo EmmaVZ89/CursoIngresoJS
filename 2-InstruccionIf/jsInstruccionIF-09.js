@@ -3,8 +3,10 @@ function mostrar()
 	//Genero el número RANDOM entre 1 y 10 
 	let numeroRandom;
 
-	numeroRandom = Math.ceil(Math.random()*10);
+	numeroRandom = Math.floor(Math.random()*10) + 1;
 
-	alert(numRandom);
+	alert("Número random: " + numeroRandom);
 	
 }//FIN DE LA FUNCIÓN
+
+// Zelarayan Emmanuel Victor

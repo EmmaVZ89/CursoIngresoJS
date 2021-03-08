@@ -6,10 +6,13 @@ function mostrar()
 
 	edad = txtIdEdad.value;
 	edad = parseInt(edad);
+
 	estado = estadoCivil.value;
 
-	if (edad >= 18 && estado == "Soltero") {
+	if (edad > 17 && estado == "Soltero") {
 		alert("Es soltero y no es menor.");
 	}
 		 
 }//FIN DE LA FUNCIÓN
+
+// Zelarayan Emmanuel Victor

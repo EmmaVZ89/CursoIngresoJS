@@ -13,12 +13,16 @@ function mostrar()
 	respuesta = 'si';
 	contador = 0;
 
-	while(respuesta == "si") {
+	while(respuesta == "si")
+	{
 		numeroIngresado = prompt("Ingrese un numero:");
 		numeroIngresado = parseInt(numeroIngresado);
+
 		suma += numeroIngresado;
 		contador++;
+
 		respuesta = prompt("Continuar?, si o no.");
+		respuesta = respuesta.toLowerCase();
 	}
 
 	promedio = suma / contador;

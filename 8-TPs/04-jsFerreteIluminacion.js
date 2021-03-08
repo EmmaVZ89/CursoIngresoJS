@@ -10,5 +10,82 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+ 	let cantidadLamparitas;
+ 	let precio;
+ 	let marca;
+ 	let descuento;
+ 	let precioConDescuento;
+ 	let ingresosBrutos;
+ 	let importeFinal;
+
+ 	cantidadLamparitas = txtIdCantidad.value;
+ 	marca = Marca.value;
+
+ 	cantidadLamparitas = parseInt(cantidadLamparitas);
+ 	precio = 35;
+
+ 	switch(cantidadLamparitas) {
+ 		case 1:
+ 		case 2:
+ 			descuento = 0;
+ 		break;
+
+ 		case 3:
+ 		if(marca == "ArgentinaLuz")
+ 		{
+ 			descuento = precio * 0.15;
+ 		}
+ 		else
+ 		{
+ 			if(marca == "FelipeLamparas")
+ 			{
+ 			descuento = precio * 0.10;
+ 			}
+ 			else
+ 			{
+ 			descuento = precio * 0.05;
+ 			}
+ 		}	
+ 		break;
+
+ 		case 4:
+ 		if(marca == "ArgentinaLuz" || marca == "FelipeLamparas")
+ 		{
+ 			descuento = precio * 0.25;
+ 		}
+ 		else
+ 		{
+ 			descuento = precio * 0.20;
+ 		}
+ 		break;
+
+ 		case 5:
+ 		if(marca == "ArgentinaLuz")
+ 		{
+ 			descuento = precio * 0.40;
+ 		}
+ 		else
+ 		{
+ 			descuento = precio * 0.30;
+ 		}
+ 		break;
+
+ 		default:
+ 			descuento = precio * 0.50;
+ 	}
+
+ 	precioConDescuento = precio - descuento;
+ 	importeFinal = precioConDescuento * cantidadLamparitas;
+
+ 	if(importeFinal > 120)
+ 	{
+ 		ingresosBrutos = importeFinal * 0.10;
+ 		importeFinal = importeFinal + ingresosBrutos;
+ 		alert("IIBB Usted pago: $ " + ingresosBrutos);
+ 	}
+
+ 	txtIdprecioDescuento.value = importeFinal;
+
 }
+
+// Zelarayan Emmanuel Victor

@@ -1,13 +1,15 @@
 function mostrar()
 {
 	let numeroIngresado;
+	let i;
 
-	for (let i = 0; i == i; i++) {
-
+	for (i = 0; i == i; i++)
+	{
 		numeroIngresado = prompt("Ingrese un numero");
 		numeroIngresado = parseInt(numeroIngresado);
 
-		if (numeroIngresado == 9) {
+		if (numeroIngresado == 9)
+		{
 			break;
 		}
 	}

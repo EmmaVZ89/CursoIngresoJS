@@ -6,6 +6,7 @@ function mostrar()
 
 	edad = txtIdEdad.value;
 	edad = parseInt(edad);
+	
 	estado = estadoCivil.value;
 
 	if (edad < 18 && estado != "Soltero") {

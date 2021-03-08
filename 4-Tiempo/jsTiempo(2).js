@@ -3,20 +3,19 @@ var miIntervalo ;
 
 function inicio()
 {
-	alert("function inicio.");
+	alert("Inicio de la función");
 	miIntervalo = setInterval(SegundosEnElAire, 3000);
 	
 }//FIN DE LA FUNCIÓN inicio
 
 function SegundosEnElAire() {
 
-    alert("Bienvenido a la UTN FRA");
+	alert("Bienvenidos a la UTN FRA");
     
 }//FIN DE LA FUNCIÓN SegundosEnElAire
 
 function fin()
 {
-	alert("function fin.");
+	alert("Fin de la función")
 	clearTimeout(miIntervalo);
-
 }//FIN DE LA FUNCIÓN fin

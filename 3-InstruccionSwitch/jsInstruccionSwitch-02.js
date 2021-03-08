@@ -1,7 +1,7 @@
 function mostrar()
 {
 	//tomo el mes
-	var mesDelAño;
+	let mesDelAño;
 
 	mesDelAño = txtIdMes.value;
 	
@@ -12,20 +12,16 @@ function mostrar()
 		case "Abril":
 		case "Mayo":
 		case "Junio":
-		alert("Falta para el invierno.");
+			alert("Falta para el invierno.");
 		break;
 		case "Julio":
 		case "Agosto":
-		alert("Abrigate que hace frio.");
+			alert("Abrigate que hace frio.");
 		break;
-		case "Septiembre":
-		case "Octubre":
-		case "Noviembre":
-		case "Diciembre":
-		alert("Ya pasamos el frio, ahora calor!!!.");
+		default:
+			alert("Ya pasamos el frio, ahora calor!!!.");
 		break;
 	}
-
-
-
 }//FIN DE LA FUNCIÓN
+
+//Zelarayan Emmanuel Victor

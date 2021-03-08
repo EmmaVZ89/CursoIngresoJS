@@ -8,7 +8,8 @@ function mostrar()
 	claveIngresada = prompt("Ingrese la clave");
 	clave = "utn750";
 
-	while(claveIngresada != clave) {
-	claveIngresada = prompt("Ingrese nuevamente la clave.");
+	while(claveIngresada != clave)
+	{
+		claveIngresada = prompt("Ingrese nuevamente la clave.");
 	}	
 }//FIN DE LA FUNCIÓN

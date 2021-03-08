@@ -12,19 +12,23 @@ function mostrar()
 	multiplicacionNegativos = 1;
 	respuesta = 'si';
 
-	while(respuesta == "si") {
+	while(respuesta == "si")
+	{
 		numeroIngresado = prompt("Ingrese un numero:");
 		numeroIngresado = parseInt(numeroIngresado);
-		if (numeroIngresado >= 0) {
+		
+		if (numeroIngresado >= 0)
+		{
 			sumaPositivos += numeroIngresado;
-		} else {
+		}
+		else
+		{
 			multiplicacionNegativos *= numeroIngresado;
 		}
 
 		respuesta = prompt("Continuar?, si o no.");
 		
 	}
-
 
 	txtIdSuma.value = sumaPositivos;
 	txtIdProducto.value = multiplicacionNegativos;

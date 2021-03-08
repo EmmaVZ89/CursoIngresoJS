@@ -1,32 +1,68 @@
-/*
-Al presionar el botón pedir  números  hasta que el usuario quiera,
-mostrar el número máximo y el número mínimo ingresado.*/
+// 9 BIS: Ingresar 10 números distintos de cero. Determinar de los
+//  pares el menor y de los negativos el mayor. 
+
 function mostrar()
-{	// declarar variables
+{	
 	let numeroIngresado;
-	let numeroMaximo;
-	let numeroMinimo;
-	let respuesta;
 	let contador;
-	let arrayNumeros;
+	let banderaDePrimerNumeroPar;
+	let banderaDeNumeroNegativo;
+	let parMenor;
+	let negativoMayor;
 
 	contador = 0;
-	arrayNumeros = [];
-	respuesta='si';
+	banderaDePrimerNumeroPar = "Primer numero par";
+	banderaDeNumeroNegativo = "Primer numero negativo";
 
-	while(respuesta=="si")
+
+	while(contador < 10)
 	{
 		numeroIngresado = prompt("Ingrese un numero:");
 		numeroIngresado = parseInt(numeroIngresado);
-		arrayNumeros[contador] = numeroIngresado;
-		contador++;
-		respuesta = prompt("desea continuar?");
+
+		while(numeroIngresado == 0 || isNaN(numeroIngresado))
+		{
+			numeroIngresado = prompt("ERROR: Ingrese un numero distinto de cero, NO ingresar letras.");
+			numeroIngresado = parseInt(numeroIngresado);
+		}
+
+		if (numeroIngresado % 2 == 0)
+		{
+			if (parMenor > numeroIngresado || banderaDePrimerNumeroPar == "Primer numero par" )
+			{
+				parMenor = numeroIngresado;
+				banderaDePrimerNumeroPar = "No es el primer numero par";
+			}
+		}
+
+		if (numeroIngresado < 0)
+		{
+			if (negativoMayor < numeroIngresado || banderaDeNumeroNegativo == "Primer numero negativo")
+			{
+				negativoMayor = numeroIngresado;
+				banderaDeNumeroNegativo = "No es el primer numero negativo";
+			}
+		}
+
+		// if ((banderaDePrimerNumeroPar == "Primer numero par" && numeroIngresado % 2 == 0) || (numeroIngresado % 2 == 0 && parMenor > numeroIngresado))
+		// {
+		// 	parMenor = numeroIngresado;
+		// 	banderaDePrimerNumeroPar = "No es el primer numero par";
+		// }
+
+		// if ((banderaDeNumeroNegativo == "Primer numero negativo" && numeroIngresado < 0) || (numeroIngresado < 0 && negativoMayor < numeroIngresado))
+		// {
+		// 	negativoMayor = numeroIngresado;
+		// 	banderaDeNumeroNegativo = "No es el primer numero negativo";
+		// }
+
+	contador++;
+
 	}
 	
-	numeroMaximo = Math.max(...arrayNumeros);
-	numeroMinimo = Math.min(...arrayNumeros);
-
-	txtIdMaximo.value = numeroMaximo;
-	txtIdMinimo.value = numeroMinimo;
+	txtIdMaximo.value = negativoMayor;
+	txtIdMinimo.value = parMenor;
 
 }//FIN DE LA FUNCIÓN
+
+// Zelarayan Emmanuel Victor
