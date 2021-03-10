@@ -6,3 +6,5 @@ function mostrar()
 	alert("Esto funciona de maravilla");
 }
 
+//"Hola windowsssss"
+
